@@ -15,6 +15,36 @@
     ></script>
   </head>
   <body style="background: #fcfcfc">
+    <div class="overlay" id="overlay">
+      <div class="kotak" id="kotak">
+        <p class="judul">Ingin mencoba tour e-vote?</p>
+        <p class="teks">
+          Panduan alur e-vote mulai dari fungsi-fungsi tombol hingga alur
+          pemilihan menggunakan e-vote secara lengkap dan cepat!
+        </p>
+        <div class="field-button">
+          <p class="link abu" onclick="keluar()">Tidak Perlu</p>
+          <p class="link merah" onclick="tahap2()">Ok</p>
+        </div>
+      </div>
+      <div class="kotak-gambar" id="kotak-gambar">
+        <p class="judul">Highlight Banner</p>
+        <div class="field-gambar">
+          <img src="./assets/img/tahap 2.png" alt="" class="gambar" />
+        </div>
+        <p class="teks">
+          Disini berisi informasi banner yang sedang/akan berlangsung dan
+          menjadi sorotan
+        </p>
+        <div class="row">
+          <div class="kiri">1 dari 10</div>
+          <div class="field-button">
+            <p class="link abu" onclick="tahap1()">Tidak Perlu</p>
+            <p class="link merah" onclick="tahap3()">Ok</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- <div class="preloader">
 <div class="sk-rotating-plane"></div>
 </div> -->
@@ -58,7 +88,7 @@
             <img src="./assets/img/Group 39.png" alt="" class="gambar" />
           </a>
         </div>
-        <div class="bantuan" onclick="tes()">
+        <div class="bantuan" onclick="tahap1()">
           <p class="teks">Butuh Bantuan?</p>
         </div>
       </div>

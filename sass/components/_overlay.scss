@@ -1,0 +1,141 @@
+.overlay {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.104);
+  z-index: 3;
+  .kotak {
+    @include flex-column;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    border-radius: 10px;
+    padding: 26.53px 15px;
+    width: 88%;
+    &.hilang {
+      display: none;
+    }
+    .judul {
+      @include font1;
+      align-self: flex-start;
+      color: #514f4f;
+      font-weight: 900;
+      font-size: 9px;
+      margin-bottom: 10px;
+    }
+    .teks {
+      @include font1;
+      font-weight: normal;
+      font-size: 8px;
+      color: #161515;
+      margin-bottom: 15px;
+    }
+    .field-button {
+      @include flex-row;
+      align-items: center;
+      align-self: flex-end;
+      .link {
+        @include flex-row;
+        @include font1;
+        align-items: center;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 7px;
+        justify-content: center;
+        width: 86px;
+        padding: 10px;
+        cursor: pointer;
+        &.abu {
+          background-color: #b1d4e0;
+          margin-right: 6.23px;
+        }
+        &.merah {
+          background-color: #ee215a;
+        }
+      }
+    }
+  }
+  .kotak-gambar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    border-radius: 25px;
+    padding: 15px 0;
+    width: 88%;
+    .judul {
+      @include font1;
+      align-self: flex-start;
+      color: #514f4f;
+      font-weight: 900;
+      font-size: 15px;
+      margin-bottom: 10px;
+      padding: 0 20px;
+    }
+    .field-gambar {
+      @include flex-column;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px #24a3d6 solid;
+      border-bottom: 1px #24a3d6 solid;
+      height: 200px;
+      width: 100%;
+      margin-bottom: 6px;
+      .gambar {
+        height: 90%;
+        max-width: 90%;
+      }
+    }
+    .teks {
+      @include font1;
+      font-size: 9px;
+      padding: 0 18px;
+
+      color: #161515;
+    }
+    .row {
+      @include flex-row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 12px;
+      .kiri {
+        align-self: flex-end;
+        color: #161515;
+        font-size: 9px;
+      }
+      .field-button {
+        @include flex-row;
+        align-items: center;
+        align-self: flex-end;
+        .link {
+          @include flex-row;
+          @include font1;
+          align-items: center;
+          border-radius: 10px;
+          color: white;
+          font-weight: bold;
+          font-size: 7px;
+          justify-content: center;
+          width: 86px;
+          padding: 10px;
+          cursor: pointer;
+          &.abu {
+            background-color: #b1d4e0;
+            margin-right: 6.23px;
+          }
+          &.merah {
+            background-color: #ee215a;
+          }
+        }
+      }
+    }
+  }
+}
