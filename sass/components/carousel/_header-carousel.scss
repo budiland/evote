@@ -1,0 +1,37 @@
+// Header Carousel
+.swiper-container.header-carousel {
+  width: 100%;
+  // height: 45vh;
+  position: relative;
+  margin: 0 0 33px 0;
+  // margin-top: 8vh;
+
+  @include pc {
+    margin-top: 0vh;
+    // height: 100vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    /* Center slide text vertically */
+    @include flex-column;
+    width: 100%;
+    height: 100%;
+    transition: $transition-slow;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    &.swiper-slide-active {
+      // transition: $transition-slow;
+      // height: 100%;
+      // transform: translateY(0);
+    }
+  }
+}

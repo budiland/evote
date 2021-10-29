@@ -1,0 +1,176 @@
+.pemilihan-section {
+  @include flex-row;
+  justify-content: space-between;
+  background-color: #fcfcfc;
+  padding: 34px 12px;
+  position: relative;
+  @include pc {
+    padding: 114px 97px 276px 97px;
+  }
+  .item {
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    .judul {
+      background-color: #4a4545;
+      padding: 4.51px 2.65px;
+      border-radius: 4px;
+      margin: 0 0 46px 0;
+      @include pc {
+        border-radius: 10px;
+        padding: 14px 32px;
+        margin: 0 0 133px 0;
+      }
+      .teks {
+        @include font2;
+        color: white;
+        font-weight: 800;
+        font-size: 7px;
+        @include pc {
+          font-size: 18px;
+        }
+      }
+    }
+    .card {
+      @include flex-column;
+      align-items: center;
+      background-color: #24a3d6;
+      border-radius: 25px;
+      position: relative;
+      padding: 78px 12px 16px 12px;
+      width: 100%;
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.207));
+      @include pc {
+        padding: 312px 34px 17px 34px;
+      }
+      .field-gambar {
+        @include flex-row;
+        justify-content: space-between;
+        position: absolute;
+        padding: 0 10px;
+        top: -30px;
+        left: 0;
+        right: 0;
+        @include pc {
+          top: -100px;
+          padding: 0 20px;
+        }
+        .gambar {
+          width: 49%;
+          border-radius: 10px;
+          padding: 5px 0;
+          background-color: white;
+          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.165));
+          @include pc {
+            padding: 15px 0;
+          }
+          img {
+            border-radius: 50%;
+            width: 100%;
+            @include pc {
+              margin: 0 0 18px 0;
+            }
+          }
+          .teks {
+            @include font2;
+            color: #047a9f;
+            font-weight: bold;
+            font-size: 5px;
+            text-align: center;
+            @include pc {
+              font-size: 18px;
+              margin: 0 0 12px 0;
+            }
+          }
+        }
+      }
+      .teks {
+        @include font2;
+        color: white;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 5px;
+        line-height: 10px;
+        @include pc {
+          font-size: 18px;
+          line-height: 30px;
+          margin: 0 0 39px 0;
+        }
+        &.judul {
+          @include font1;
+          background-color: transparent;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 9px;
+          padding: 0;
+          border-radius: 0;
+          margin: 0 0 6px 0;
+          text-align: center;
+          @include pc {
+            font-size: 24px;
+            margin: 0 0 27px 0;
+          }
+        }
+        &.misi {
+          color: rgba(255, 255, 255, 0.5);
+          @include pc {
+            margin: 0;
+          }
+        }
+      }
+      .button {
+        @include flex-column;
+        align-items: center;
+        background-color: #047a9f;
+        border-radius: 10px;
+        padding: 2px;
+        margin: 12px 0 0 0;
+        width: 40%;
+        @include pc {
+          padding: 12.65px;
+          margin: 21px 0 0 0;
+          width: 25%;
+        }
+        .teks {
+          @include font1;
+          font-weight: bold;
+          font-size: 8px;
+          @include pc {
+            margin: 0;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+  .tombol {
+    @include flex-column;
+    align-items: center;
+    background-color: #ee215a;
+    border-radius: 5px;
+    padding: 4.71px 12.01px;
+    margin: 12px 0 0 0;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 29vw;
+    @include pc {
+      width: 20%;
+      bottom: 120px;
+      border-radius: 10px;
+      left: 40vw;
+      padding: 16px;
+    }
+    .teks {
+      @include font1;
+      color: white;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      @include pc {
+        font-size: 18px;
+      }
+    }
+  }
+}

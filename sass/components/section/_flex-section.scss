@@ -1,0 +1,26 @@
+.flex-section {
+  border-radius: 15px;
+  padding: 16px 15px;
+  background-color: white;
+  width: 100%;
+  margin: 0 0 33px 0;
+  .kotak-judul {
+    @include font1;
+    @include flex-column;
+    align-items: center;
+    background-color: #047a9f;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 0 59px 0;
+    width: 12%;
+  }
+  .flex {
+    @include flex-row;
+    .gambar {
+      margin: 0 10px 0 0;
+      width: 19%;
+    }
+  }
+}

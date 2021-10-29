@@ -1,0 +1,97 @@
+.showcase-section {
+  @include flex-column;
+  padding: 26px 25px 24px 25px;
+  background-color: #fcfcfc;
+  @include pc {
+    padding: 22px 95px 34px 95px;
+  }
+
+  .pembungkus {
+    @include flex-column;
+    background-color: #fcfcfc;
+    position: relative;
+    padding: 20px 0 0 0;
+    border-radius: 20px;
+    @include pc {
+      background-color: rgba(219, 219, 219, 0.18);
+      padding: 70px 9px 25px 9px;
+    }
+    .kotak-judul {
+      @include flex-row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      right: 50px;
+      background-color: #58b9e9;
+      padding: 4px;
+      @include pc {
+        padding: 37px;
+      }
+      .teks {
+        @include font1;
+        color: white;
+        font-weight: 500;
+        font-size: 13px;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        @include pc {
+          font-size: 36px;
+        }
+      }
+    }
+    .kotak-isi {
+      @include flex-row;
+      background-color: white;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-radius: 20px;
+      padding: 47px 11px 41px 11px;
+      @include pc {
+        padding: 154px 87px 198px 87px;
+      }
+      .link {
+        width: 46%;
+        filter: drop-shadow(0 0 5px #c0c0c0);
+        margin: 0 0 21px 0;
+        @include pc {
+          margin: 0;
+          width: 30%;
+        }
+
+        .gambar {
+          width: 100%;
+        }
+      }
+    }
+    .bantuan {
+      @include flex-row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -7px;
+      left: 75px;
+      right: 75px;
+      background-color: #ee215a;
+      padding: 5px;
+      cursor: pointer;
+      @include pc {
+        bottom: 40px;
+        left: 525px;
+        right: 525px;
+        padding: 17px;
+      }
+      .teks {
+        @include font1;
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+        @include pc {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

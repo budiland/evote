@@ -1,0 +1,52 @@
+.topbar {
+  @include flex-row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 38px;
+  @include pc {
+    height: 64px;
+    padding: 0 97px;
+  }
+  .field-kiri {
+    .gambar {
+      width: 62px;
+      @include pc {
+        width: 150.67px;
+      }
+    }
+  }
+  .field-kanan {
+    @include flex-row;
+    align-items: center;
+    .teks {
+      @include font1;
+      color: #565656;
+      font-weight: 500;
+      font-size: 11px;
+      margin: 0 5px 0 0;
+      @include pc {
+        margin: 0 22px 0 0;
+        font-size: 24px;
+      }
+    }
+    .icon {
+      @include flex-row;
+      align-items: center;
+      justify-content: center;
+      background-color: #565656;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      @include pc {
+        width: 35px;
+        height: 35px;
+      }
+      i {
+        color: white;
+      }
+    }
+  }
+}

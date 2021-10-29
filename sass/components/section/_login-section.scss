@@ -1,0 +1,165 @@
+.login-section {
+  @include flex-row;
+  .kiri {
+    @include flex-column;
+    align-items: center;
+    padding: 40px 10%;
+    position: relative;
+    width: 100%;
+    @include pc {
+      width: 50%;
+      height: 100vh;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    }
+    .background {
+      position: absolute;
+      left: -18px;
+      top: -15px;
+      height: 100%;
+      width: 125%;
+      transform: rotate(3deg);
+      z-index: 1;
+      @include pc {
+        left: 0;
+        top: -95px;
+        width: 100%;
+        transform: rotate(0);
+      }
+    }
+    .logo {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 45.54px;
+      width: 35.52631578947368%;
+    }
+    .kotak {
+      @include flex-column;
+      align-items: center;
+      border-radius: 8px;
+      background-color: white;
+      padding: 56px 5.729166666666667%;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+      width: 100%;
+      .judul {
+        @include font1;
+        font-weight: 500;
+        font-size: 30px;
+        color: #047a9f;
+        margin-bottom: 15px;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      .line {
+        width: 75%;
+        height: 1px;
+        background-color: #dcdcdc;
+        margin-bottom: 15px;
+      }
+      .teks {
+        @include font2;
+        color: #575757;
+        opacity: 0.8;
+        font-weight: 500;
+        font-size: 11px;
+        margin-bottom: 15px;
+      }
+      .form {
+        @include flex-column;
+        label {
+          @include font3;
+          color: #047a9f;
+          font-weight: 500;
+          opacity: 0.8;
+          font-size: 11px;
+        }
+        input {
+          @include font3;
+          border: 1px solid #b8c7ce;
+          font-size: 9px;
+          width: 100%;
+          padding: 7.5px 2.352941176470588%;
+          margin-bottom: 22px;
+          &::placeholder {
+          }
+          &[type="submit"] {
+            @include font1;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            width: 50%;
+            border-radius: 6px;
+            background: #ee215a;
+            align-self: center;
+            &.kecil {
+              align-self: flex-end;
+              font-size: 12px;
+              padding: 2.48px 8.827450980392157%;
+              width: 30.98039215686275%;
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .pembungkus-input {
+          position: relative;
+          &.kode {
+            @include flex-row;
+            align-items: center;
+          }
+          .kode {
+            margin-bottom: 0;
+          }
+          .link-overlay {
+            @include font3;
+            font-weight: 500;
+            font-size: 11px;
+            color: #047a9f;
+            position: absolute;
+            right: 1px;
+            padding-left: 10px;
+            padding-right: 9px;
+            background: white;
+          }
+        }
+        .link {
+          @include font3;
+          align-self: flex-end;
+          font-weight: 500;
+          font-size: 11px;
+          color: #047a9f;
+          margin-bottom: 34px;
+        }
+      }
+    }
+  }
+  .kanan {
+    display: none;
+    @include pc {
+      @include flex-column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 50%;
+      height: 100vh;
+    }
+    .background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 80%;
+    }
+    .pembungkus {
+      position: relative;
+      top: 2.75vh;
+      .logo {
+        position: absolute;
+        top: -20px;
+        left: 45px;
+        width: 39.58333333333333%;
+      }
+      .gambar {
+        width: 36.66666666666667vw;
+      }
+    }
+  }
+}

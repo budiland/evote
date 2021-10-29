@@ -1,0 +1,20 @@
+.footer {
+  @include flex-row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #047a9f;
+  padding: 21px 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .teks {
+    @include font1;
+    color: white;
+    font-weight: 500;
+    font-size: 9px;
+    @include pc {
+      font-size: 24px;
+    }
+  }
+}
