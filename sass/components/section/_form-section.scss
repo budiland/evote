@@ -17,6 +17,20 @@
       padding-right: 200px;
     }
   }
+  &.grafik {
+    @include flex-row;
+    justify-content: space-between;
+    padding: 87px 61px;
+    .grafik {
+      max-width: 526px;
+    }
+  }
+  &.full {
+    padding: 16px 0;
+    .line {
+      margin-bottom: 5px;
+    }
+  }
   .judul {
     @include font1;
     font-style: normal;
@@ -43,13 +57,76 @@
     }
     .pembungkus-input {
       width: 74%;
+      position: relative;
+      &.flex {
+        @include flex-column;
+        flex-wrap: wrap;
+        height: 47px;
+      }
       .textbox {
         border: 1px solid #c4c4c4;
         border-radius: 5px;
         padding: 12px 18px;
         width: 100%;
+        &.ada-overlay-kiri {
+          padding-left: 110px;
+        }
+      }
+      .number {
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        padding: 12px 18px;
+        width: 40%;
+      }
+      .overlay-kiri {
+        @include flex-row;
+        @include font1;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 19%;
+        background-color: #047a9f;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+      }
+      .overlay-kanan {
+        @include flex-row;
+        @include font1;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 15px;
+        width: 20px;
+        top: 0;
+        bottom: 0;
+        transform: rotate(90deg);
+        .teks {
+          color: grey;
+        }
+      }
+      .hint {
+        @include font2;
+        color: rgba(87, 87, 87, 0.47);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
       }
     }
+  }
+  .column {
+    @include flex-column;
+    width: 74%;
+  }
+  .trash {
+    position: absolute;
+    top: 25px;
+    left: 30px;
   }
   .tombol {
     position: absolute;
@@ -61,5 +138,39 @@
     border-radius: 6px;
     color: white;
     text-decoration: none;
+    &.hapus {
+      right: 190px;
+      background-color: #24a3d6;
+    }
+  }
+  .table {
+    width: 95%;
+    tr {
+      height: 63px;
+      border-bottom: 1px grey solid;
+      &.header {
+        height: 38px;
+      }
+      td,
+      th {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        .tombol-kecil {
+          @include flex-row;
+          justify-content: center;
+          align-items: center;
+          background-color: #58b9e9;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 40px;
+          color: white;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          padding: 5px 0;
+        }
+      }
+      th {
+        text-align: left;
+      }
+    }
   }
 }

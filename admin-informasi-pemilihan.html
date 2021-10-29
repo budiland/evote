@@ -98,6 +98,30 @@
                   class="textbox"
                   placeholder="Waktu Pelaksanaan"
                 />
+                <div class="overlay-kanan"><p class="teks">></p></div>
+              </div>
+            </div>
+            <div class="row">
+              <label for=""></label>
+              <div class="pembungkus-input flex">
+                <div>
+                  <label for="quantity">jam</label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    class="number"
+                  />
+                </div>
+                <div>
+                  <label for="quantity">jam</label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    class="number"
+                  />
+                </div>
               </div>
             </div>
             <div class="row">
@@ -110,6 +134,30 @@
                   class="textbox"
                   placeholder="Waktu Penutupan"
                 />
+                <div class="overlay-kanan"><p class="teks">></p></div>
+              </div>
+            </div>
+            <div class="row">
+              <label for=""></label>
+              <div class="pembungkus-input flex">
+                <div>
+                  <label for="quantity">jam</label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    class="number"
+                  />
+                </div>
+                <div>
+                  <label for="quantity">jam</label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    class="number"
+                  />
+                </div>
               </div>
             </div>
             <div class="row">
@@ -119,21 +167,28 @@
                   type="text"
                   name=""
                   id=""
-                  class="textbox"
+                  class="textbox ada-overlay-kiri"
                   placeholder="Gambar Hightlight"
                 />
+                <div class="overlay-kiri">Unggah</div>
+              </div>
+            </div>
+            <div class="row">
+              <label for=""> </label>
+              <div class="pembungkus-input">
+                <p class="hint">Ukuran Ideal: 1251 x 531</p>
               </div>
             </div>
             <div class="row">
               <label for="">Jenis Pemilihan</label>
               <div class="pembungkus-input">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  class="textbox"
-                  placeholder="Jenis Pemilihan"
-                />
+                <div class="custom-select" style="width: 200px">
+                  <select>
+                    <option value="0">Pilih Jenis:</option>
+                    <option value="1">Individu</option>
+                    <option value="2">Pasangan</option>
+                  </select>
+                </div>
               </div>
             </div>
             <a href="#" class="tombol">Kirim</a>
@@ -156,6 +211,8 @@
     <!-- Custom Script -->
     <script src="./js/script.js"></script>
     <script src="./js/carousel.js"></script>
-    <script></script>
+    <script>
+      customSelect();
+    </script>
   </body>
 </html>
