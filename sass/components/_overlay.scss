@@ -17,6 +17,10 @@
     border-radius: 10px;
     padding: 26.53px 15px;
     width: 88%;
+    @include pc {
+      border-radius: 25px;
+      padding: 52px 30px 46px 30px;
+    }
     &.hilang {
       display: none;
     }
@@ -27,6 +31,10 @@
       font-weight: 900;
       font-size: 9px;
       margin-bottom: 10px;
+      @include pc {
+        font-size: 48px;
+        margin-bottom: 29px;
+      }
     }
     .teks {
       @include font1;
@@ -34,6 +42,11 @@
       font-size: 8px;
       color: #161515;
       margin-bottom: 15px;
+      @include pc {
+        align-self: flex-start;
+        font-size: 18px;
+        margin-bottom: 39px;
+      }
     }
     .field-button {
       @include flex-row;
@@ -51,9 +64,16 @@
         width: 86px;
         padding: 10px;
         cursor: pointer;
+        @include pc {
+          font-size: 18px;
+          width: 195px;
+        }
         &.abu {
           background-color: #b1d4e0;
           margin-right: 6.23px;
+          @include pc {
+            margin-right: 35px;
+          }
         }
         &.merah {
           background-color: #ee215a;
@@ -78,6 +98,9 @@
       font-size: 15px;
       margin-bottom: 10px;
       padding: 0 20px;
+      @include pc {
+        font-size: 48px;
+      }
     }
     .field-gambar {
       @include flex-column;
@@ -88,6 +111,10 @@
       height: 200px;
       width: 100%;
       margin-bottom: 6px;
+      @include pc {
+        margin-bottom: 45px;
+        height: 657px;
+      }
       .gambar {
         height: 90%;
         max-width: 90%;
@@ -99,6 +126,10 @@
       padding: 0 18px;
 
       color: #161515;
+      @include pc {
+        margin-bottom: 24px;
+        font-size: 18px;
+      }
     }
     .row {
       @include flex-row;
@@ -106,10 +137,16 @@
       justify-content: space-between;
       width: 100%;
       padding: 12px;
+      @include pc {
+        padding: 30px;
+      }
       .kiri {
         align-self: flex-end;
         color: #161515;
         font-size: 9px;
+        @include pc {
+          font-size: 18px;
+        }
       }
       .field-button {
         @include flex-row;
@@ -127,9 +164,16 @@
           width: 86px;
           padding: 10px;
           cursor: pointer;
+          @include pc {
+            width: 195px;
+            font-size: 18px;
+          }
           &.abu {
             background-color: #b1d4e0;
             margin-right: 6.23px;
+            @include pc {
+              margin-right: 35px;
+            }
           }
           &.merah {
             background-color: #ee215a;
