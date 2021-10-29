@@ -31,6 +31,14 @@
       margin-bottom: 5px;
     }
   }
+  &.di-tab {
+    padding: 32px 331px 21px 65px;
+    .row {
+      .pembungkus-input {
+        width: 70%;
+      }
+    }
+  }
   .judul {
     @include font1;
     font-style: normal;
@@ -117,6 +125,12 @@
         font-weight: 500;
         font-size: 18px;
       }
+      .text-area {
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        padding: 12px 18px;
+        width: 100%;
+      }
     }
   }
   .column {
@@ -142,6 +156,14 @@
       right: 190px;
       background-color: #24a3d6;
     }
+  }
+  .button-tambah {
+    align-self: flex-start;
+    background-color: #047a9f;
+    padding: 13.26px 16.17px;
+    text-decoration: none;
+    color: white;
+    margin: 0 0 38.28px 11px;
   }
   .table {
     width: 95%;
@@ -170,6 +192,45 @@
       }
       th {
         text-align: left;
+      }
+    }
+    &-besar {
+      width: 83%;
+      tr {
+        height: 63px;
+        &.header {
+          height: 38px;
+        }
+        &:nth-child(2n) {
+          td {
+            background-color: #d5e2f3;
+          }
+        }
+        td,
+        th {
+          //   border: 1px solid black;
+          .tombol-kecil {
+            display: inline;
+            background-color: #ee215a;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 6px;
+            color: white;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 11px 17px;
+          }
+        }
+        th {
+          background-color: #007bff;
+          color: white;
+        }
+        td {
+          background-color: #aacfff;
+        }
+        .center {
+          text-align: center;
+        }
       }
     }
   }

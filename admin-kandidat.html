@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="" />
+    <title>Title of document</title>
+    <!-- <link rel="shortcut icon" href="./assets/icon/icon.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <!-- Font Awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/e7d3e74a3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="admin-background">
+    <!-- <div class="preloader">
+<div class="sk-rotating-plane"></div>
+</div> -->
+    <!-- <button onclick="topFunction()" class="btnup" title="Go to top">^</button> -->
+    <section class="admin-section">
+      <div class="sidebar">
+        <div class="kotak-logo">
+          <img src="./assets/img/logo.png" alt="" class="logo" />
+        </div>
+        <div class="kotak-judul">
+          <p class="teks">MENU</p>
+        </div>
+        <nav class="nav-side">
+          <a href="./admin.html" class="item">
+            <i class="fas fa-archive"></i>
+            Manajemen E-Vote
+          </a>
+          <div class="sub-nav-side">
+            <a href="./admin-informasi-pemilihan.html" class="item">
+              <i class="fas fa-volume-up"></i>Informasi Pemilihan
+            </a>
+            <a href="./admin-kandidat.html" class="item active">
+              <i class="far fa-file-alt"></i>Manajemen Kandidat
+            </a>
+            <a href="./admin-kriteria-hak-suara.html" class="item">
+              <i class="fas fa-user-check"></i>Kriteria Hak Suara
+            </a>
+            <a href="./admin-grafik.html" class="item">
+              <i class="fas fa-chart-pie"></i>Perolehan Suara
+            </a>
+          </div>
+          <a href="./admin-data-pengguna.html" class="item">
+            <i class="fas fa-archive"></i>Manajemen Akun
+          </a>
+          <div class="sub-nav-side">
+            <a href="./admin-tambah-mahasiswa.html" class="item">
+              <i class="fas fa-file-medical"></i>Buat Akun Maba
+            </a>
+            <a href="admin-ubah-data-pengguna.html" class="item">
+              <i class="fas fa-folder-open"></i>Data Pengguna
+            </a>
+            <a href="./admin-tambah-data-pengguna.html" class="item">
+              <i class="fas fa-file-upload"></i>Tambah Akun
+            </a>
+          </div>
+        </nav>
+        <a href="#" class="tombol">
+          <i class="fas fa-sign-out-alt"></i>
+          Sign Out
+        </a>
+      </div>
+      <div class="content">
+        <nav class="navbar">
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+        <main class="main">
+          <h2 class="judul">Akun Admin</h2>
+          <section class="tab-section">
+            <div class="top">
+              <div class="kiri">
+                <a href="./admin-kandidat.html" class="link active">KETUA</a>
+                <a href="./admin-wakil-kandidat.html" class="link"
+                  >WAKIL KETUA</a
+                >
+              </div>
+              <div class="kanan">
+                <a class="button">Kirim</a>
+              </div>
+            </div>
+            <div class="isi">
+              <section class="form-section di-tab">
+                <div class="row">
+                  <label for="">Nama Lengkap</label>
+                  <div class="pembungkus-input">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="textbox"
+                      placeholder="Nama lengkap"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="">Tanggal Lahir</label>
+                  <div class="pembungkus-input">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="textbox"
+                      placeholder="dd/mm/yyyy"
+                    />
+                    <div class="overlay-kanan"><p class="teks">></p></div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <label for="">Tempat Lahir</label>
+                  <div class="pembungkus-input">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="textbox"
+                      placeholder="Tempat lahir"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="">NPM</label>
+                  <div class="pembungkus-input">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="textbox"
+                      placeholder="Nomor pokok mahasiswa"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="">Jurusan</label>
+                  <div class="pembungkus-input">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="textbox"
+                      placeholder="Jurusan"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="">Fakultas</label>
+                  <div class="pembungkus-input">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="textbox"
+                      placeholder="Fakultas"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="">Pengalaman Organisasi</label>
+                  <div class="pembungkus-input">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="textbox"
+                      placeholder="Pengalaman organisasi"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="">Visi</label>
+                  <div class="pembungkus-input">
+                    <textarea
+                      id="w3review"
+                      name="w3review"
+                      rows="2"
+                      cols="50"
+                      placeholder="Visi"
+                      class="text-area"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="">Misi</label>
+                  <div class="pembungkus-input">
+                    <textarea
+                      id="w3review"
+                      name="w3review"
+                      rows="4"
+                      cols="50"
+                      placeholder="Misi"
+                      class="text-area"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <label for="">Foto</label>
+                  <div class="pembungkus-input">
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      class="textbox ada-overlay-kiri"
+                      placeholder="Foto"
+                    />
+                    <div class="overlay-kiri">Unggah</div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+        </main>
+        <div class="footer">
+          <p class="teks">© Copyright ∙ Manusia Peternak</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script src="./js/script.js"></script> -->
+
+    <!-- Jquery -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="        crossorigin="anonymous"></script> -->
+    <script src="./js/jquery.js"></script>
+    <!-- Carousel -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="./js/swiper-bundle.js"></script>
+    <!-- Custom Script -->
+    <script src="./js/script.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script></script>
+  </body>
+</html>

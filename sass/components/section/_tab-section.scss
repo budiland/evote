@@ -1,0 +1,54 @@
+.tab-section {
+  @include flex-column;
+  align-items: center;
+  border-radius: 15px;
+  //   padding: 16px 228px;
+  background-color: #b1d4e0;
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+  position: relative;
+  .top {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 54px;
+    .kiri {
+      @include flex-row;
+      height: 100%;
+      .link {
+        @include flex-row;
+        @include font1;
+        align-items: center;
+        font-weight: 500;
+        font-size: 24px;
+        color: #047a9f;
+        text-decoration: none;
+
+        padding: 13px 38px;
+        &.active {
+          background-color: white;
+        }
+      }
+    }
+    .kanan {
+      padding: 7px 38px 7px 0;
+
+      .button {
+        @include font2;
+        background-color: #ee215a;
+        border-radius: 6px;
+        color: white;
+        font-weight: 600;
+        padding: 8.5px 32px;
+        font-size: 18px;
+      }
+    }
+  }
+  .isi {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+}
